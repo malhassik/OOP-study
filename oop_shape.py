@@ -10,7 +10,7 @@ class Shape:
         return 0
 
     def info(self):
-        print(f"{self.name}: площадь = {self.area()}")
+        print(f"{self.name}: площадь = {round(self.area(), 2)}")
 
 
 class Rectangle(Shape):
