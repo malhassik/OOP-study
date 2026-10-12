@@ -1,4 +1,4 @@
-from math import pi, pow
+from math import pi
 
 
 class Shape:
@@ -16,7 +16,7 @@ class Shape:
 class Rectangle(Shape):
 
     def __init__(self, width, height):
-        super().__init__("Треугольник")
+        super().__init__("Прямоугольник")
         self.width = width
         self.height = height
 
@@ -31,4 +31,4 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return pi * pow(self.radius, 2)
+        return pi * self.radius**2
