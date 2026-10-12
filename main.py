@@ -4,5 +4,20 @@ from oop_shape import Shape, Rectangle, Circle
 rectangle = Rectangle(5, 5)
 circle = Circle(5)
 
-rectangle.info()
-circle.info()
+try:
+    rectangle.width = -5
+    print("Ошибка не сработала!")
+except ValueError as e:
+    print("Ошибка:", e)
+
+try:
+    rectangle.height = 0
+    print("Ошибка не сработала!")
+except ValueError as e:
+    print("Ошибка:", e)
+
+try:
+    circle.radius = -1
+    print("Ошибка не сработала!")
+except ValueError as e:
+    print("Ошибка:", e)
